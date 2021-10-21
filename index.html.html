@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar {
+            display: flex;
+            /* border: 2px brown solid; */
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .nav {
+
+            display: flex;
+            align-items: center;
+        }
+
+        .nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+
+            border-radius: 10px;
+            margin: 30px;
+            list-style: none;
+            font-size: 30px;
+
+
+
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav ul li a:hover {
+
+            color: black;
+            background-color: white;
+            border: 5px solid white;
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+
+        #navbar::before {
+
+            content: "";
+            background-color: black;
+            position: absolute;
+
+            height: 22.5%;
+            width: 98.50%;
+            z-index: -1;
+            opacity: 0.70;
+
+        }
+
+
+        .nav img {
+            height: 100px;
+            width: 110px;
+            margin: 20px;
+
+        }
+
+
+        /* section home*/
+
+        #home-container {
+            display: flex;
+            /* border:solid 10px black; */
+            justify-content: center;
+            align-items: center;
+            /* flex-direction:column; */
+            /* border:solid brown 2px; */
+            height: 100%;
+            width: 100%;
+
+
+        }
+
+
+
+        #home-container h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin: 50px;
+            font-size: 27px;
+            font-family: cursive;
+            /* font-style: italic; */
+
+        }
+
+        #home-container p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            color: white;
+            font-size: 20px;
+        }
+
+
+
+
+
+        #home-container::before {
+            content: "";
+            position: absolute;
+            background: url("background.jfif") no-repeat center center/cover;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+
+        #btn {
+
+            cursor: pointer;
+            background-color: rgb(124, 26, 26);
+            color: white;
+            padding: 15px;
+            border-radius: 34px;
+            border: 2px solid white;
+            margin-top: 50px;
+            font-weight: 700;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transition-duration: 0.50s;
+            text-align: center;
+
+        }
+
+        #btn:hover {
+            background-color: rgb(245, 7, 7);
+            font-family: cursive;
+            height: 100px;
+            width: 200px;
+            font-size: 20px;
+            transform: scale;
+
+        }
+
+
+
+
+        /*services*/
+        #service-container {
+
+            /* border: solid red 2px; */
+            width: 100%;
+            height: 500px;
+            margin-top: 254px;
+            margin-left: 0%;
+            margin-right: 0%;
+
+        }
+
+        .services {
+            display: flex;
+            /* border: solid green 2px; */
+            height: 430px;
+
+        }
+
+        .services div {
+            border: solid black 2px;
+
+            margin: 20px;
+            width: 340px;
+            padding: 20px;
+            border-radius: 40px;
+            padding-left: 70px;
+        }
+
+        .services div img {
+
+            height: 100px;
+            width: 150px;
+            align-items: center;
+            padding: 10px;
+            padding-right: 10px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .serv-font {
+            font-size: 30px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+        /* client section*/
+
+        #client-section {
+
+            height: 500px;
+            margin-top: 10px;
+            width: 0px;
+            font-size: 30px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+
+
+
+        #clients {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-left: 600px;
+
+        }
+
+        .client-item {
+
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        .client-item img {
+            height: 150px;
+            width: 150px;
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url("background1.jfif")no-repeat center/cover;
+            height: 350px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.90;
+
+        }
+
+        .center {
+            text-align: center;
+            margin-left: 500px;
+
+        }
+
+        /*  contact section*/
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+             width:100%;
+           height: 400px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        #contact-box form {
+            font-size: 1.3rem;
+            font-family: cursive;
+        }
+
+        #contact-box label {
+            width: 40px;
+        }
+        #content::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            margin-top:-166px;
+            background-image: url(tecnology.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }  
+       
+        .sara
+        {
+        
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 0px;
+            background-color: rgb(183, 203, 233);
+            margin-top: -9px;
+            padding: 12px;
+
+        }
+        .sara a{
+            color: rgb(0, 0, 78);
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .sara :hover{
+            background-color: teal;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header id="navbar">
+        <nav class="nav">
+            <div>
+                <img src="logo.png">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">AboutUs</a></li>
+                    <li><a href="#">Contact US</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- section Home-->
+    <section id="home-container">
+        <div>
+            <h1>Welcome To Sara'S Online Meal Center</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicingLoremngLorem, ipsum dolor sit amet consectetur
+                adipisicing
+                elit.
+
+
+            <p> <button id="btn">Order Now</button></p>
+        </div>
+    </section>
+
+    <!-- services sectyion-->
+    <section id="service-container">
+        <h1 class="serv-font">Our Services</h1>
+        <div class="services">
+            <div><img src="pizza.jfif">
+                <H1 class="serv-font">Food Ordering</H1>
+                <p>Lorem ipsum dolor sit am0et consectetur adipisicing elit. Eum ipsam officiis debitis, dolore natus
+                    modi
+
+                    officia hic. Cupiditate sapiente libero earum?</p>
+            </div>
+
+            <div><img src="plate.jfif">
+                <H1 class="serv-font">Bulk Ordering</H1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam officiis debitis, dolore natus
+                    modi
+
+                    officia hic. Cupiditate sapiente libero earum?</p>
+            </div>
+
+
+            <div><img src="deliveryimg.jfif">
+                <H1 class="serv-font">Food Catering</H1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam officiis debitis, dolore natus
+                    modi
+                    porro nulla
+                    officia hic. Cupiditate sapiente libero earum?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our clients Section-->
+    <section id="client-section">
+        <h1 class="center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="microsoft.png">
+            </div>
+            <div class="client-item">
+                <img src="skype.png">
+            </div>
+            <div class="client-item">
+                <img src="swigy.png">
+            </div>
+            <div class="client-item">
+                <img src="hp.jfif">
+            </div>
+            <div class="client-item">
+                <img src="apple5.jfif">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="content">
+        <h1 class="h-primary">
+            <center>Contact us</center>
+        </h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                    <br>
+                    <div class="form-group">
+                        <label for="name">Email</label>
+                        <input type="Email" name="name" id="email" placeholder="Enter your Email">
+                        <br>
+                        <div class="form-group">
+                            <label for="name">Phone Number</label>
+                            <input type="text" name="name" id="phone" placeholder="Enter your Phone Number">
+                            <br>
+                            <div class="form-group">
+                                <label for="name">Message: </label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                            </div>
+            </form>
+        </div>
+    </section>
+<footer class="sara">
+    <a href="">
+        copyright &copy;www.Welcome To Sara'S Online Meal Center.com
+    </a>
+</footer>
+
+</body>
+
+
+</html>
